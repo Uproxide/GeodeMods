@@ -5,5 +5,12 @@
 	"id": "uproxide.evilgd",
 	"name": "Evil Geometry Dash",
 	"developer": "Uproxide",
-	"description": "Evil ReTray reference"
+	"description": "Evil ReTray reference",
+	"dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": ">=v1.1.4",
+            "importance": "required"
+        }
+    ]
 }
