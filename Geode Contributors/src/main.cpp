@@ -10,7 +10,7 @@ using namespace geode::prelude;
 
 // sorry for the mess, im not the c++ coder lmfao
 
-class MyLayer : public CCLayer {
+class buttonfunctionthing : public CCLayer {
 	public:
 	void onButtonClick(CCObject* sender) {
 		FLAlertLayer::create(
@@ -34,7 +34,7 @@ class $modify(ProfilePage) {
 		auto mainMenu = static_cast<cocos2d::CCLayer*>(this->getChildByIDRecursive("main-menu"));
 		auto spr = CCSprite::create("geode.png"_spr);
 		auto btn = CCMenuItemSpriteExtra::create(
-       		spr, this, menu_selector(MyLayer::onButtonClick)
+       		spr, this, menu_selector(buttonfunctionthing::onButtonClick)
     	);
 		auto contentSize = mainMenu->getContentSize();
 
@@ -61,14 +61,5 @@ class $modify(ProfilePage) {
 
 
 		return true;
-	}
-
-	void loadPageFromUserInfo(GJUserScore* score)
-	{
-		ProfilePage::loadPageFromUserInfo(score);
-		
-
-		auto infoButton = static_cast<CCMenuItemSpriteExtra*>(this->getChildByIDRecursive("main-menu")->getChildByID("info-button"));
-		infoButton->setPosition(205.412, -129.013);
 	}
 };
