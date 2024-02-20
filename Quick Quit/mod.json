@@ -5,6 +5,7 @@
 	"name": "Quick Quit",
 	"developer": "Uproxide",
 	"description": "Closes the game with \"Q\" Key",
+    "repository": "https://github.com/Uproxide/GeodeMods/tree/main/Quick%20Quit",
 	"dependencies": [
         {
             "id": "geode.custom-keybinds",

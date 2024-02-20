@@ -6,6 +6,7 @@
 	"name": "Evil Geometry Dash",
 	"developer": "Uproxide",
 	"description": "Evil ReTray reference",
+	"repository": "https://github.com/Uproxide/GeodeMods/tree/main/Evil%20Geometry%20Dash",
 	"dependencies": [
         {
             "id": "geode.node-ids",
